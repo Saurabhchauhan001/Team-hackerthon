@@ -32,6 +32,37 @@
         .home, .profile {
             display: none;
         }
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -46,7 +77,19 @@
 
     <div id="home" class="content home">
         <h1>Welcome to the Health & Wellbeing Portal</h1>
-        <p>This is the home page where you can find an overview of your health activities.</p>
+        <p>Please log in to access your health activities.</p>
+
+        <div class="login-container">
+            <form onsubmit="login(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <input type="submit" value="Login">
+            </form>
+        </div>
     </div>
 
     <div id="profile" class="content profile">
@@ -61,6 +104,20 @@
                 element.style.display = 'none';
             });
             document.getElementById(page).style.display = 'block';
+        }
+
+        function login(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Simple authentication (for demonstration purposes)
+            if (username === 'admin' && password === 'password') {
+                alert('Login successful!');
+                showPage('profile'); // Redirect to profile page on successful login
+            } else {
+                alert('Invalid credentials. Please try again.');
+            }
         }
 
         // Show the home page by default
