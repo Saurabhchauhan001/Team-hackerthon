@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00A6FF;
+    padding: 10px;
+    color: white;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.nav-btn.active {
+    background-color: #78E79E;
+    border-radius: 5px;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.main-content {
+    margin: 20px;
+    text-align: center;
+}
+
+.goal-banner {
+    background-color: #FFD700;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 10px;
+    height: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.progress-done {
+    height: 100%;
+    background-color: #78E79E;
+    border-radius: 10px 0 0 10px;
+}
+
+.progress-left {
+    height: 100%;
+    background-color: #FF4E4E;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.activity-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat-block {
+    width: 30%;
+    background-color: #E0E0E0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.green {
+    color: #28a745;
+}
+
+.red {
+    color: #dc3545;
+}
+
+.blue {
+    color: #007bff;
+}
+
+.certificate-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.certificate-block {
+    width: 40%;
+    background-color: #FF5733;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+header {
+    background-color: #f76a6a;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #49e849;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

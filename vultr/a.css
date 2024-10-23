@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #f76a6a;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #49e849;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.intro {
+    background-color: #7197f7;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.overlay-text {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.trainer-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.trainer-info h2 {
+    font-size: 22px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #ffded7;
+}
+
+.service {
+    text-align: center;
+    border: 2px solid #49e849;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+}
+
+.service img {
+    width: 100px;
+    height: 100px;
+}
+
+.service p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #e32626;
+    font-weight: bold;
+}
